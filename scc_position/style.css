@@ -1,0 +1,37 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+}
+.header{
+    margin: 85px auto 0;
+    text-align: center;
+}
+.h1{
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 1.2;
+}
+.main{
+    width: 100%;
+    padding: 0 13%;
+}
+.block{
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+}
+.div{
+    width: 100%;
+    background-color: darkblue;
+}
+.block_blue{
+    background-color: blue;
+}
