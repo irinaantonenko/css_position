@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__item__firstchild"><a class="link_title" href="http://127.0.0.1:5500/flex-direction/avto/main_page.html" target="_blank"><span class="span1">LOGO</span><span class="span2">Auto</span></a>
+            </div>
+            <div class="header__item__secondchild">
+                <nav class="nav">
+                    <ul class="list">
+                        <li class="list__item">How it Works</li>
+                        <li class="list__item">Contacts</li>
+                        <li class="list__item">Blog</li>
+                        <li class="list__item"><span class="list__item__active">Shop</span></li>
+                        <li class="list__item">About us</li>
+                        <li class="list__item">Home</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__item__thirdchild">
+                <button class="btn1">Login</button>
+                <button class="btn2">Register</button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="shop__section">                
+                <div class="filter">
+                    <ul class="accordion">
+                        <li class="accordion__item">
+                            <input type="checkbox" name="accordion" class="accordion__toggle">
+                            <div class="accordion__title">
+                                <h3 class="filter__h3">Price</h3>
+                                <div class="accordion__arrow"></div>                                
+                            </div>
+                            <div class="accordion__content">
+                                <div class="price__filter">
+                                    <label class="price">Min</label>
+                                    <input class="price__input" type="number" name="minprice" placeholder="$0" step="1" min="0">
+                                </div>
+                                <div class="price__filter1">
+                                    &ndash;
+                                </div>
+                                <div class="price__filter">
+                                    <label class="price">Max</label>
+                                    <input class="price__input" type="number" name="maxprice" placeholder="$500000" step="1" min="0">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <input type="checkbox" name="accordion" class="accordion__toggle">
+                            <div class="accordion__title">
+                                <h3 class="filter__h3">Brands</h3>
+                                <div class="accordion__arrow"></div>
+                            </div>
+                            <div class="accordion__content">
+                                <ul class="brand">
+                                    <li class="brand__item">
+                                        <div class="brand_check">       
+                                            <input type="checkbox" name="brand" class="brand__input">
+                                            <label class="brand__name">Toyota</label>
+                                        </div>
+                                        <p class="brand__quantity">(13)</p>
+                                    </li>
+                                    <li class="brand__item">
+                                        <div class="brand_check">
+                                            <input type="checkbox" name="brand" class="brand__input">
+                                            <label class="brand__name">Ford</label>
+                                        </div>
+                                        <p>(8)</p>
+                                    </li>
+                                    <li class="brand__item">
+                                        <div class="brand_check">
+                                            <input type="checkbox" name="brand" class="brand__input">
+                                            <label class="brand__name">Toyota</label>
+                                        </div>
+                                        <p>(3)</p>
+                                    </li>
+                                    <li class="brand__item">
+                                        <div class="brand_check">
+                                            <input type="checkbox" name="brand" class="brand__input">
+                                            <label class="brand__name">Toyota</label>
+                                        </div>
+                                        <p>(5)</p>
+                                    </li>
+                                    <li class="brand__item">
+                                        <div class="brand_check">
+                                            <input type="checkbox" name="brand" class="brand__input">
+                                            <label class="brand__name">Toyota</label>
+                                        </div>
+                                        <p>(12)</p>
+                                    </li>
+                                </ul>                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop__block">
+                    <h1 class="h1">Our shop</h1>                    
+                    <div class="shop__list">
+                        <div class="shop__item">
+                            <a href="images/shop_img_1_7_9.png" target="_blank"><img class="img" src="images/shop_img_1_7_9.png" alt="avto1"></a>
+                            <h3 class="avto__item__h3">2020 Audi S5 Coupe</h3>
+                            <div class="block__price">
+                                <p class="block__price__new">$8588</p>
+                                <p class="block__price__old">$15000</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text">Available at your store</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                        <div class="shop__item">
+                            <a href="images/shop_img_2.png" target="_blank"><img class="img" src="images/shop_img_2.png" alt="avto2"></a>
+                            <h3 class="avto__item__h3">2016 Ford Mustang Shelby GT350</h3>
+                            <div class="block__price">
+                                <p class="block__price__now">$7688</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text">Available at your store</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                        <div class="shop__item">
+                            <a href="images/shop_img_3_8.png" target="_blank"><img class="img" src="images/shop_img_3_8.png" alt="avto3"></a>
+                            <h3 class="avto__item__h3">2020 Bugatti Chiron</h3>
+                            <div class="block__price">
+                                <p class="block__price__now">$9588</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text"> Free Shipping</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                        <div class="shop__item">
+                            <a href="images/shop_img_4_5.png" target="_blank"><img class="img" src="images/shop_img_4_5.png" alt="avto4"></a>
+                            <h3 class="avto__item__h3">2019 Porsche 911 Carrera</h3>
+                            <div class="block__price">
+                                <p class="block__price__new">$10888</p>
+                                <p class="block__price__old">$12000</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text">Free Shipping</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                        <div class="shop__item">
+                            <a href="images/shop_img_4_5.png" target="_blank"><img class="img" src="images/shop_img_4_5.png" alt="avto4"></a>
+                            <h3 class="avto__item__h3">2019 Porsche 911 Carrera</h3>
+                            <div class="block__price">
+                                <p class="block__price__new">$10888</p>
+                                <p class="block__price__old">$12000</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text">Free Shipping</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                        <div class="shop__item">
+                            <a href="images/shop_img_6.png" target="_blank"><img class="img" src="images/shop_img_6.png" alt="avto4"></a>
+                            <h3 class="avto__item__h3">2019 Porsche 911 Carrera</h3>
+                            <div class="block__price">
+                                <p class="block__price__new">$10888</p>
+                                <p class="block__price__old">$12000</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text">Free Shipping</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                        <div class="shop__item">
+                            <a href="images/shop_img_1_7_9.png" target="_blank"><img class="img" src="images/shop_img_1_7_9.png" alt="avto1"></a>
+                            <h3 class="avto__item__h3">2020 Audi S5 Coupe</h3>
+                            <div class="block__price">
+                                <p class="block__price__new">$8588</p>
+                                <p class="block__price__old">$15000</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text">Available at your store</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                        <div class="shop__item">
+                            <a href="images/shop_img_3_8.png" target="_blank"><img class="img" src="images/shop_img_3_8.png" alt="avto3"></a>
+                            <h3 class="avto__item__h3">2020 Bugatti Chiron</h3>
+                            <div class="block__price">
+                                <p class="block__price__now">$9588</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text"> Free Shipping</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                        <div class="shop__item">
+                            <a href="images/shop_img_1_7_9.png" target="_blank"><img class="img" src="images/shop_img_1_7_9.png" alt="avto1"></a>
+                            <h3 class="avto__item__h3">2020 Audi S5 Coupe</h3>
+                            <div class="block__price">
+                                <p class="block__price__new">$8588</p>
+                                <p class="block__price__old">$15000</p>
+                            </div>
+                            <div class="block__link">
+                                <p class="block__link__text">Available at your store</p>
+                                <p class="block__link__arrow">&rarr;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frame">
+
+                    </div>
+                </div>            
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__item__firstchild">LOGOAuto</div>
+            <div class="footer__item__secondchild">
+                <nav class="nav">
+                    <ul class="list">
+                        <li class="list__item list__item__footer">How it Works</li>
+                        <li class="list__item list__item__footer">Contacts</li>
+                        <li class="list__item list__item__footer">Blog</li>
+                        <li class="list__item list__item__footer"><span class="list__item__active">Shop</span></li>
+                        <li class="list__item list__item__footer">About us</li>
+                        <li class="list__item list__item__footer">Home</li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>
