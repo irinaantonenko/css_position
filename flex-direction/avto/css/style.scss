@@ -111,6 +111,7 @@ body {
 }
 .link__text {
     width: 100%;
+    text-decoration: none;
 }
 .list__item:hover, .link:hover {
     background-color: #FF2E63;
@@ -159,6 +160,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     margin: 0 auto;
+    text-decoration: none;
 }
 .btn2:hover {
     background-color: #fff;
