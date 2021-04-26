@@ -59,11 +59,21 @@ body {
 
 .span1 {
   color: #252A34;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 30px;
+  line-height: 1.27;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .span2 {
   text-transform: uppercase;
   color: #FF2E63;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 30px;
+  line-height: 1.27;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .nav {
@@ -89,12 +99,49 @@ body {
   padding: 0;
 }
 
-.list__item, .link {
+.list__item {
   margin: 0 15px;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 0;
   text-decoration: none;
   color: #252A34;
+}
+
+.link {
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
+  color: #252A34;
+  padding: 10px;
+}
+
+.link__footer {
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.title__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop__arrow {
+  color: #FF2E63;
+  width: 7%;
+}
+
+.link__text {
+  width: 100%;
 }
 
 .list__item:hover, .link:hover {
@@ -248,12 +295,14 @@ body {
 
 .img1 {
   max-width: 100%;
+  min-width: 500px;
 }
 
 .elipse {
-  max-width: 50%;
-  width: 23rem;
-  height: 33rem;
+  min-width: 300px;
+  min-height: 500px;
+  width: 23em;
+  height: 33em;
   border-radius: 50%;
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(249, 250, 250, 0.911)), to(rgba(162, 177, 209, 0.3)));
@@ -345,7 +394,7 @@ body {
   cursor: pointer;
 }
 
-.car_image {
+.car__image {
   position: relative;
   width: 100%;
   padding-top: 60%;
@@ -575,7 +624,7 @@ body {
   width: 100%;
 }
 
-.p1 {
+.h5 {
   padding: 15% 20%;
   font-size: 20px;
   font-weight: 600;
@@ -860,7 +909,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .brand__input:checked + .checkbox__item {
-  background-color: #FF2E63;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4C0 1.79086 1.79086 0 4 0H16C18.2091 0 20 1.79086 20 4V16C20 18.2091 18.2091 20 16 20H4C1.79086 20 0 18.2091 0 16V4Z' fill='%23346CD9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.75 6C13.405 6 13.0925 6.14 12.8663 6.36625L11.6163 7.61625L8.75 10.4825L7.13375 8.86625C6.9075 8.64 6.595 8.5 6.25 8.5C5.56 8.5 5 9.06 5 9.75C5 10.095 5.14 10.4075 5.36625 10.6337L7.86625 13.1337C8.0925 13.36 8.405 13.5 8.75 13.5C9.095 13.5 9.4075 13.36 9.63375 13.1337L13.3837 9.38375L14.6337 8.13375C14.86 7.9075 15 7.595 15 7.25C15 6.55937 14.44 6 13.75 6Z' fill='white'/%3E%3Cpath d='M4 1H16V-1H4V1ZM19 4V16H21V4H19ZM16 19H4V21H16V19ZM1 16V4H-1V16H1ZM4 19C2.34315 19 1 17.6569 1 16H-1C-1 18.7614 1.23858 21 4 21V19ZM19 16C19 17.6569 17.6569 19 16 19V21C18.7614 21 21 18.7614 21 16H19ZM16 1C17.6569 1 19 2.34315 19 4H21C21 1.23858 18.7614 -1 16 -1V1ZM4 -1C1.23858 -1 -1 1.23858 -1 4H1C1 2.34315 2.34315 1 4 1V-1Z' fill='%23346CD9'/%3E%3C/svg%3E%0A");
   border: none;
 }
 
@@ -932,18 +981,249 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__p {
-  margin-left: 5%;
   font-size: 14px;
   line-height: 1.29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contacts__p__text {
   font-weight: 700;
 }
 
-.contacts__link {
+.contacts__p__img {
+  margin-right: 10px;
+}
+
+.contacts__p__link {
   cursor: pointer;
   text-decoration: none;
   color: #252A34;
+}
+
+.contacts__p__link:hover {
+  border-bottom: 3px solid rgba(255, 46, 99, 0.3);
+  border-radius: 1px;
+}
+
+.contacts .frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts .frame__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+}
+
+.contacts .registration {
+  text-align: center;
+}
+
+.contacts .registration__h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.contacts .registration__h2__p {
+  margin: 0 30px;
+  font-family: "Rajdhani", sans-serif;
+  color: #343434;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.contacts hr {
+  margin: 0 40px;
+}
+
+.contacts .main {
+  min-height: 100vh;
+}
+
+.contacts .register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+}
+
+.contacts .register__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.contacts .register__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.contacts .register__name__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 5px;
+}
+
+.contacts .register__name__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts .registration__h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  white-space: nowrap;
+  background-color: #fff;
+}
+
+.contacts .registration__h2 > a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.contacts .registration__h2 > a:hover, .contacts .registration__h2 > a:target {
+  border-bottom: #FF2E63 5px solid;
+  padding-bottom: 1px;
+  margin-bottom: -2px;
+}
+
+.contacts .tabs > #register:target ~ .registration__h2 > a[href="#register"],
+.contacts .tabs > #login:target ~ .registration__h2 > a[href="#login"] {
+  background-color: #bbdefb;
+  cursor: default;
+}
+
+.contacts .tabs > div:not(.registration__h2) {
+  display: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.contacts .tabs > div:target {
+  display: block;
+}
+
+.contacts .link__target {
+  text-decoration: none;
+  color: #FF2E63;
+  width: 100%;
+}
+
+.contacts .link__target2 {
+  color: #fff;
+}
+
+.contacts .link__target2:hover {
+  color: #FF2E63;
 }
 /*# sourceMappingURL=style.css.map */
