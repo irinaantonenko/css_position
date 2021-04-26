@@ -142,7 +142,6 @@ body {
 
 .link__text {
   width: 100%;
-  text-decoration: none;
 }
 
 .list__item:hover, .link:hover {
@@ -203,7 +202,6 @@ body {
   font-weight: 600;
   font-size: 16px;
   margin: 0 auto;
-  text-decoration: none;
 }
 
 .btn2:hover {
@@ -1001,22 +999,22 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 700;
 }
 
-.contacts__p__img {
+.contacts__img {
   margin-right: 10px;
 }
 
-.contacts__p__link {
+.contacts__link {
   cursor: pointer;
   text-decoration: none;
   color: #252A34;
 }
 
-.contacts__p__link:hover {
+.contacts__link:hover {
   border-bottom: 3px solid rgba(255, 46, 99, 0.3);
   border-radius: 1px;
 }
 
-.contacts .frame {
+.frame {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1028,7 +1026,7 @@ input[type=number]::-webkit-outer-spin-button {
           align-items: center;
 }
 
-.contacts .frame__item {
+.frame__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1041,11 +1039,11 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 15px;
 }
 
-.contacts .registration {
+.registration {
   text-align: center;
 }
 
-.contacts .registration__h2 {
+.registration__h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1059,7 +1057,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
 }
 
-.contacts .registration__h2__p {
+.registration__h2__p {
   margin: 0 30px;
   font-family: "Rajdhani", sans-serif;
   color: #343434;
@@ -1067,15 +1065,15 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 1.2;
 }
 
-.contacts hr {
+hr {
   margin: 0 40px;
 }
 
-.contacts .main {
+.main {
   min-height: 100vh;
 }
 
-.contacts .register {
+.register {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1092,7 +1090,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 25px;
 }
 
-.contacts .register__title {
+.register__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1102,7 +1100,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 
-.contacts .register__name {
+.register__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,7 +1110,7 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 
-.contacts .register__name__item {
+.register__name__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1128,7 +1126,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 5px;
 }
 
-.contacts .register__name__email {
+.register__email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,7 +1140,7 @@ input[type=number]::-webkit-outer-spin-button {
           flex-direction: column;
 }
 
-.contacts .login {
+.login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1155,7 +1153,7 @@ input[type=number]::-webkit-outer-spin-button {
           align-items: center;
 }
 
-.contacts .tabs {
+.tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1168,7 +1166,7 @@ input[type=number]::-webkit-outer-spin-button {
           align-items: center;
 }
 
-.contacts .registration__h2 {
+.registration__h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1185,47 +1183,47 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #fff;
 }
 
-.contacts .registration__h2 > a {
+.registration__h2 > a {
   display: inline-block;
   text-decoration: none;
   padding: 6px 10px;
   text-align: center;
 }
 
-.contacts .registration__h2 > a:hover, .contacts .registration__h2 > a:target {
+.registration__h2 > a:hover, .registration__h2 > a:target {
   border-bottom: #FF2E63 5px solid;
   padding-bottom: 1px;
   margin-bottom: -2px;
 }
 
-.contacts .tabs > #register:target ~ .registration__h2 > a[href="#register"],
-.contacts .tabs > #login:target ~ .registration__h2 > a[href="#login"] {
+.tabs > #register:target ~ .registration__h2 > a[href="#register"],
+.tabs > #login:target ~ .registration__h2 > a[href="#login"] {
   background-color: #bbdefb;
   cursor: default;
 }
 
-.contacts .tabs > div:not(.registration__h2) {
+.tabs > div:not(.registration__h2) {
   display: none;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
-.contacts .tabs > div:target {
+.tabs > div:target {
   display: block;
 }
 
-.contacts .link__target {
+.link__target {
   text-decoration: none;
   color: #FF2E63;
   width: 100%;
 }
 
-.contacts .link__target2 {
+.link__target2 {
   color: #fff;
 }
 
-.contacts .link__target2:hover {
+.link__target2:hover {
   color: #FF2E63;
 }
 /*# sourceMappingURL=style.css.map */

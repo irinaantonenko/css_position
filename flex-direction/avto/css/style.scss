@@ -111,7 +111,6 @@ body {
 }
 .link__text {
     width: 100%;
-    text-decoration: none;
 }
 .list__item:hover, .link:hover {
     background-color: #FF2E63;
@@ -160,7 +159,6 @@ body {
     font-weight: 600;
     font-size: 16px;
     margin: 0 auto;
-    text-decoration: none;
 }
 .btn2:hover {
     background-color: #fff;
@@ -718,9 +716,10 @@ input[type=number]::-webkit-outer-spin-button {
         &__text{
             font-weight: 700;            
         }
-        &__img{
-            margin-right: 10px;
-        }
+    }
+    &__img{
+        margin-right: 10px;
+    }
     &__link {
         cursor: pointer;
         text-decoration: none;
@@ -745,19 +744,19 @@ input[type=number]::-webkit-outer-spin-button {
 .registration {
    text-align: center;
    &__h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-    width: 100%;
-    &__p {
-        margin: 0 30px;
-        font-family: $title_font-family;
-        color: $main_color;
-        font-size: 50px;
-        line-height: 1.2;
-    }
-   }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        width: 100%;
+        &__p {
+            margin: 0 30px;
+            font-family: $title_font-family;
+            color: $main_color;
+            font-size: 50px;
+            line-height: 1.2;
+        }
+    }    
 }
 hr {
     margin: 0 40px;
@@ -788,12 +787,12 @@ hr {
             text-align: center;
             margin: 5px;
         }
+    }
     &__email {
         display: flex;
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        }
     }
 }
 .login {
@@ -837,21 +836,21 @@ hr {
 .tabs>div:not(.registration__h2) {
     display: none;
     order: 1;
-  }
+}
 
-  .tabs>div:target {
+.tabs>div:target {
     display: block;
 
-  }
-  .link__target {
-      text-decoration: none;
-      color:$color2;
-      width: 100%;
-  }
-  .link__target2 {
-      color: #fff;    
-  }
-  .link__target2:hover {
-      color:$color2;
-  }
 }
+.link__target {
+    text-decoration: none;
+    color:$color2;
+    width: 100%;
+}
+.link__target2 {
+    color: #fff;    
+}
+.link__target2:hover {
+    color:$color2;
+}
+
