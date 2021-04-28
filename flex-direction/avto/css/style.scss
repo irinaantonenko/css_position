@@ -860,6 +860,8 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    perspective: 600;
+    position: relative;
 }
 .registration__h2 {
     display: flex;
@@ -892,8 +894,21 @@ hr {
     display: none;
     order: 1;
 }
+@keyframes pulse {
+    from{
+        transform: rotateY(360deg);
+    }
+    to{
+        transform: rotateY(30deg);
+    }
+}
+.tabs>div{
+    display: block;
+    transform: rotateY(360deg);
+}
 .tabs>div:target {
     display: block;
+    animation: pulse 1s linear 2s;
 }
 .link__target {
     text-decoration: none;

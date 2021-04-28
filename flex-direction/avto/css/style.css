@@ -1251,6 +1251,9 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-perspective: 600;
+          perspective: 600;
+  position: relative;
 }
 
 .registration__h2 {
@@ -1295,8 +1298,38 @@ hr {
           order: 1;
 }
 
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  to {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  to {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg);
+  }
+}
+
+.tabs > div {
+  display: block;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
 .tabs > div:target {
   display: block;
+  -webkit-animation: pulse 1s linear 2s;
+          animation: pulse 1s linear 2s;
 }
 
 .link__target {
