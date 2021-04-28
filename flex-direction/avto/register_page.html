@@ -21,7 +21,7 @@
             <div class="header__item__secondchild">
                 <nav class="nav">
                     <ul class="list">
-                        <li class="list__item"><a class="link" href="#howitworks">How it Works</a></li>
+                        <li class="list__item"><a class="link" href="https://irinaantonenko.github.io/my_project/flex-direction/avto/main_page.html#howitworks">How it Works</a></li>
                         <li class="list__item"><a class="link" href="https://irinaantonenko.github.io/my_project/flex-direction/avto/shop_page.html#contacts" target="_blank">Contacts</a></li>
                         <li class="list__item"><a class="link">Blog</a></li>
                         <li class="list__item"><a class="link" href="https://irinaantonenko.github.io/my_project/flex-direction/avto/shop_page.html" target="_blank">Shop</a></li>
@@ -31,11 +31,11 @@
                 </nav>
             </div>
             <div class="header__item__thirdchild">
-                <button class="btn1"><a href="http://127.0.0.1:5500/flex-direction/avto/register_page.html#login" class="link__target">Login</a></button>
-                <button class="btn2"><a href="http://127.0.0.1:5500/flex-direction/avto/register_page.html#register" class="link__target link__target2">Register</a></button>
+                <a href="https://irinaantonenko.github.io/my_project/flex-direction/avto/register_page.html#login" class="link__target btn1">Login</a>
+                <a href="https://irinaantonenko.github.io/my_project/flex-direction/avto/register_page.html#register" class="link__target btn2 link__target2">Register</a>
             </div>
         </header>
-        <main class="main">
+        <main class="main__register">
             <div class="registration">
                 <h2 class="h2 registration__h2">
                     <a href="#login" class="registration__h2__p">Login</a>
@@ -49,50 +49,68 @@
                     <div class="register__name">
                         <div class="register__name__item">
                             <label class="name">First Name</label>
-                            <input type="text" name="first_name">
+                            <input class="input__form" type="text" name="first_name">
                         </div>
                         <div class="register__name__item">
                             <label class="name">Last Name</label>
-                            <input type="text" name="last_name">
+                            <input class="input__form" type="text" name="last_name">
                         </div>
                     </div>
                     <div class="register__email">
                         <label for="useremail">E-mail</label>
                         <input class="input__form" id="useremail" type="email" name="useremail">
                     </div>
-                    <div class="register__gender"> 
-                        <label><input type="radio" name="male" value="yes">Male</label>
-                        <label><input type="radio" name="male" value="yes">Female</label>
-                    </div>
-                    <div>
-                        <div>
-                            <label class="Password">Password                        </label>
-                            <input type="text" name="Password">
+                    <div class="register__gender">
+                        <div class="lable">
+                            <input id="toggle2" type="radio" name="brand" class="brand__input">
+                            <div class="radio__item"></div>
+                            <label for="toggle2" class="brand__name"><span class="brand__name__text">Male</span></label>                            
                         </div>
-                        <div>
+                        <div class="lable">
+                            <input id="toggle3" type="radio" name="brand" class="brand__input">
+                            <div class="radio__item"></div>
+                            <label for="toggle3" class="brand__name"><span class="brand__name__text">Female</span></label>                            
+                        </div>
+                    </div>
+                    <div class="register__password">            
+                        <div class="register__name__item">
+                            <label class="Password">Password                        </label>
+                            <input class="input__form" type="text" name="Password">
+                        </div>
+                        <div class="register__name__item">
                             <label class="Password">Confirm Password
                             </label>
-                            <input type="text" name="Password">
-                        </div>
+                            <input class="input__form" type="text" name="Password">
+                        </div>                        
                     </div>
-                    <div><button>Register</button></div>
-                    <div>By clicking the 'Sign Up' button, you confirm that you accept our Terms of Use and Privacy Policy.</div>
+                    <div class="register__button">
+                        <button class="btn2">Register</button>
+                    </div>
+                    <div class="register__text">
+                        <span>By clicking the 'Sign Up' button, you confirm that you accept our<br><span class="span__link">Terms of Use</span> and <span class="span__link">Privacy Policy</span>.</span>
+                    </div>
                 </div>
                 <div id="login" class="login">
                     <div class="register__title h4">Log In</div>
-                    <div>
+                    <div class="register__email">
                         <label for="useremail">E-mail</label>
-                        <input class="input__form" id="email" type="email" name="useremail">
+                        <input class="input__form" type="email" name="useremail">
                     </div>
-                    <div>
+                    <div class="register__email">
                         <label class="Password">Password                        </label>
-                        <input type="text" name="Password">
+                        <input class="input__form" type="text" name="Password">
                     </div>
-                    <div>Forgot your password?</div>
-                    <div> 
-                        <label><input type="checkbox">Remember me</label>
+                    <div class="forgot__password">
+                        <span class="span__link">Forgot your password?</span>
                     </div>
-                    <div><button>Log in</button></div>
+                    <div class="brand__check login__check">       
+                        <input id="toggle1" type="checkbox" name="brand" class="brand__input">
+                        <div class="checkbox__item"></div>
+                        <label for="toggle1" class="brand__name"><span class="brand__name__text">Remember me</span></label>
+                    </div>
+                    <div class="register__button">
+                        <button class="btn2">Log in</button>
+                    </div>
                 </div>
             </div>
         </main>
