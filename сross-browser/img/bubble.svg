@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" width="19" height="17">
+	<title>popular-pricing</title>
+	<defs>
+		<image width="21" height="19" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAAA7klEQVQ4T7WUQRLBMBSG/9eMNW7ATbgBJ1BnCKtaygp3SE+gN+Ao3KDWRmLShmGIpK2+bV6++f+8/4XQQlFT5nWzGkWR3huOUjTtLNfHxtDbLskBdK24E+Ni+G/omXExaAy19qW1H3+1b5tmACYAegCMvUwpSs2FkBm8Kb1tEwmCAbpKMi7mPvATGgB8sLzgAmotH3wKHudK0fjXUxTQCipLrkbKFiJ2iSih71kLEZwzLvo+qA4hvfYwLpxxrKv0wrgwcfta7b1pK9OvlADP5A2r2kYFAD+gz0UgHYOK3Tdf2gUamdIka+1+1Vi5+u/kdG8UJmn7tQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="popular-pricing">
+		<use id="bubble" href="#img1" transform="matrix(1,0,0,1,-1,-1)"/>
+	</g>
+</svg>
