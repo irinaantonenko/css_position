@@ -29,11 +29,52 @@ body {
   font-weight: normal;
 }
 
+@media (max-width: 1600px) {
+  body {
+    max-width: 1600px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1240px) {
+  body {
+    max-width: 1240px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1080px) {
+  body {
+    max-width: 1080px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    max-width: 992px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    max-width: 760px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    max-width: 480px;
+    font-size: 12px;
+  }
+}
+
 .container {
   background-color: #9789f9;
   padding: 10px;
   margin: 0 auto;
-  max-width: 1420px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +86,42 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 160px;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 .pricing {
@@ -60,12 +137,25 @@ body {
   margin: 0 -15px;
 }
 
+@media (max-width: 1600px) {
+  .pricing {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 1240px) {
+  .pricing {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .pricing__col {
   background-color: #f5f4f9;
   min-height: 610px;
   min-width: 330px;
   width: calc(33% - 370px);
-  height: 43%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,9 +171,36 @@ body {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 1600px) {
+  .pricing__col {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 1240px) {
+  .pricing__col {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing__col {
+    min-width: 300px;
+  }
+}
+
 .pricing__col--center {
   min-height: 690px;
   min-width: 370px;
+}
+
+@media (max-width: 480px) {
+  .pricing__col--center {
+    min-width: 300px;
+  }
 }
 
 .pricing__rate {
