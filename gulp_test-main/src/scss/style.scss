@@ -1,0 +1,96 @@
+$container-max-widths: (sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px,
+    xxl: 1320px);
+
+$grid-gutter-width: 30px;
+$primary: #FF8126;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+.btn-primary {
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.card {
+    background: #F7F5F0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    margin: 0.25em 0 1em;
+
+    &_new {
+        font-weight: 600;
+        color: #FF8126;
+    }
+
+    &_old {
+        font-weight: 400;
+        color: #656565;
+        margin-left: 0.25em;
+        text-decoration: line-through;
+    }
+}
+.color{
+    color: $primary;
+}
+.notify{
+    background: #c2e8ce;
+    width: 100%;
+    color: #1f1f1f;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    &__close{
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        background: transparent;
+        border: none;
+    }
+}
+.input{
+    width: 100%;
+    text-align: center;
+}
+.h2, .h1{
+    text-align: center;
+    margin: 0 auto;
+}
+.btn-imp{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.nav-link .dropdown-toggle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1F1F1F;
+}

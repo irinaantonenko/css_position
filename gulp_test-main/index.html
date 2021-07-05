@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+</head>
+<body>
+    <div id="vue">
+        <!--<h1>{{show ? Title: 'Hello'}}</h1>-->
+        <!--<h1>{{Title.toUpperCase()}}</h1>-->
+        <!--<h1 v-html="show ? 'Title' : 'Hello'"></h1>-->
+        <div class="container">
+            <div class="notify" v-if="show_notify">
+                {{text_notify}}
+                <button v-on:click="hideNotify()" class="notify__close">X</button>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img src="./src/image/Group.png" alt="brand" width="110" height="95" class="d-inline-block align-text-top">
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown" v-for="(link, n) in links" :key="n">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a :title="link.title" class="nav-link dropdown-toggle" :href="link.link" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{n+1 + " - " + link.name}}
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" :href="link.link">Action</a></li>
+                                    <li><a class="dropdown-item" :href="link.link">Another action</a></li>
+                                    <li><a class="dropdown-item" :href="link.link">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <button type="button" class="btn btn-imp" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <img src="./src/image/loupe.svg" alt="loupe" width="24" height="24" class="d-inline-block align-text-top">
+                            </button>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Search</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <input class="input" type="text" placeholder="Search">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>                  
+                            <button type="button" class="btn btn-imp" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                <img src="./src/image/user.svg" alt="user" width="30" height="30" class="d-inline-block align-text-top">
+                            </button>
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel1">Log in</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Enter the name
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-imp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="./src/image/shopping-cart.svg" alt="cart" width="30" height="30" class="d-inline-block align-text-top">
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">
+                                        Your cart is empty</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       Change the product
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </nav>
+                </div>
+              </nav>
+            <h1 class="h1">{{firstLetterToUpperCase(Title)}}</h1>
+            <label>
+                <input type="checkbox" v-model="show_notify">Show notify
+            </label>
+            <input type="text" v-model="input_text">
+            <h2>{{input_text}}</h2>
+            <h2 class="h2">Average price is {{averagePrice | viewPrice }}</h2>
+        
+            <div class="row gy-2">
+                <div class="col-sm-6 col-md-4 col-xl-3" v-for="(product, i) in products" :key="i">    
+                    <div class="card">
+                        <img :src="'src/image/' + product.image" :alt="product.title">
+                        <div class="card__name text-center mt-2 mb-1">{{i + " - " + product.title}}</div>
+                        <div class="price">
+                            <span class="price_new">{{getNewPrice(product) | viewPrice}}</span>
+                            <span class="price_old" v-if="product.discount">{{product.price | viewPrice}}</span>
+                        </div>
+                        <div class="col-12 px-3">
+                            <button type="button" class="w-100 btn btn-primary">Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
+
+</body>
+</html>
