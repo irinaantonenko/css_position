@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <div class="header__item"><a href="/#/homepage" target="blank"><img :src="require('./../assets/images/logo.png')"></a>
             </div>
             <div class="header__item">
@@ -44,10 +44,6 @@ export default {
                     title: 'Prices'
                 },
                 {
-                    link: '/certificatespage',
-                    title: 'Certificates'
-                },
-                {
                     link: '/contactspage',
                     title: 'Contacts'
                 },
@@ -64,7 +60,7 @@ export default {
 @import '../css/variables.scss';
 .header {
     margin: 0;
-    padding: 20px 0;
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -80,6 +76,11 @@ export default {
     @media (min-width: $lg){
         min-height: 200px;
     }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__item {
     color: $color2;
     font-family: $font_family1;
@@ -87,7 +88,6 @@ export default {
     line-height: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 0 15px;
     cursor: pointer;
     border: none;
     @media (min-width: $lg){
@@ -157,7 +157,7 @@ export default {
         transform: translateY(10%);
     }
     @media (max-width: $xxs) {
-        transform: translateY(20%);
+        transform: translateY(14%);
     }
 }
 @media (max-width: $sm) {

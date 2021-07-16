@@ -41,8 +41,9 @@ export default {
         z-index: 2;
         top: 40%;
         left: 20%;
-        color: #dddddf;
+        color: $color4;
         font-size: 36px;
+        letter-spacing: 5px;
         @media (min-width:$xl) {
             font-size: 86px;
         }
@@ -67,6 +68,29 @@ export default {
     }
     &__subtitle {
         color: $color2;
+        font-size: 34px;
+        letter-spacing: 5px;
+        @media (min-width:$xl) {
+            font-size: 84px;
+        }
+        @media (min-width:$lg) {
+            font-size: 54px;
+        }
+        @media (max-width:$sm) {
+           top: 50%;
+           left: 40%;
+           font-size: 24px;
+        }
+        @media (max-width:$xs) {
+           top: 50%;
+           left: 30%;
+           font-size: 24px;
+        }
+        @media (max-width:$xxs) {
+           top: 40%;
+           left: 15%;
+           font-size: 12px;
+        }
     }
 }
 </style>

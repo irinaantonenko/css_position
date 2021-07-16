@@ -21,30 +21,6 @@ export default {
 }
 </script>
 <style lang="scss">
-    .about {
-        width: 100%;
-        height: calc(100vh - 100px);
-        &__item {
-            width: 50%;
-            height: 100%;
-            min-height: calc(100vh - 100px);
-        }
-        &__image{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        &__content {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-        }
-        &__title {
-            font-size: 36px;
-            font-weight: bold;
-            font-style: normal;
-        }
-    }
+@import '../css/variables.scss';
+    
 </style>

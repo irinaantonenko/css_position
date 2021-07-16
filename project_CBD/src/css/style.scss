@@ -7,31 +7,30 @@
 .container{
     width: 100%;
     margin: 0 auto;
-    max-width: 1600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    max-width: 1400px;
     font-family: $font_family1;
     @media (max-width: $xxl) {
-        max-width: 2500px;
-    }
-    @media (max-width: $xl) {
         max-width: 2000px;
     }
-    @media (max-width: $lg) {
-        max-width: 1500px;
+    @media (max-width: $xl) {
+        max-width: 1600px;
     }
-    @media (max-width: $md) {
+    @media (max-width: $lg) {
         max-width: 1400px;
     }
+    @media (max-width: $md) {
+        max-width: 1000px;
+    }
     @media (max-width: $sm) {
-        max-width: 800px;
+        max-width: 700px;
     }
     @media (max-width: $xs) {
-        max-width: 700px;
+        max-width: 400px;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
     @media (max-width: $xxs) {
-        max-width: 300px;
+        max-width: 270px;
     }
 }
