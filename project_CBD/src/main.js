@@ -8,14 +8,12 @@ import HomePage from './components/HomePage'
 import AboutmePage from './components/AboutmePage'
 import ServicesPage from './components/ServicesPage'
 import PricesPage from './components/PricesPage'
-import CertificatesPage from './components/CertificatesPage'
 import ContactsPage from './components/ContactsPage'
 
 Vue.component('home-page', HomePage)
 Vue.component('aboutme-page', AboutmePage)
 Vue.component('services-page', ServicesPage)
 Vue.component('prices-page', PricesPage)
-Vue.component('certificates-page', CertificatesPage)
 Vue.component('contacts-page', ContactsPage)
 Vue.use(VueRouter)
 
@@ -25,7 +23,6 @@ const router = new VueRouter({
   { path: '/aboutmepage', component: AboutmePage },
   { path: '/servicespage', component: ServicesPage },
   { path: '/pricespage', component: PricesPage },
-  { path: '/certificatespage', component: CertificatesPage },
   { path: '/contactspage', component: ContactsPage },
   ],
   linkActiveClass: 'is-active',

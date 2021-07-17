@@ -10,6 +10,6 @@ export default {
 @import '../../css/variables.scss';
 .router-link-exact-active{
     color: $color2;    
-    font-weight: 700;
+    font-weight: 600;
 }
 </style>

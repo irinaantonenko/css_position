@@ -11,7 +11,7 @@
                     <div class="about__item">
                         <div class="about__content">
                             <h2 class="about__title">Hello, I’m Doctor Roberts</h2>
-                            <h3 class="about__subtitle">Expert Clinical Psychologist in Manhattan</h3>
+                            <h4 class="about__subtitle">Expert Clinical Psychologist in Manhattan</h4>
                             <p class="about__text">Glad to see you on my website!
                                 I am a practicing certified Gestalt therapist. I have been practicing psychotherapy since 2011, specializing in individual consultations, leading groups and seminars.
                             </p>
@@ -25,12 +25,130 @@
         <div class="certificates">
             <div class="container">
                 <h2 class="certificates__title">Certificates &amp; Verifications</h2>
-                <h3 class="certificates__subtitle">Jane Roberts is highly verified and certificated practicing psychologist</h3>
+                <h4 class="certificates__subtitle">Jane Roberts is highly verified and certificated practicing psychologist</h4>
                 <VueSlickCarousel v-bind="settings1" :style="{height: '150px'}">
                     <certificates-item v-for="(verification, n) in verifications"
                     :key="n"
                     :verification = "verification"/>
                 </VueSlickCarousel>
+            </div>
+        </div>
+        <div class="services">
+            <div class="container services__container">
+                <div class="services__item">
+                    <img src="./../assets/images/therapy1.jpg" alt="therapy" class="services__image">
+                </div>
+                <div class="services__item">
+                    <img src="./../assets/images/therapy2.jpg" alt="therapy" class="services__image">
+                </div>
+                <div class="services__item">
+                    <img src="./../assets/images/therapy3.jpg" alt="therapy" class="services__image">
+                </div>
+                <div class="services__item">
+                    <div class="services__content">
+                        <div class="services__block">
+                            <div class="services__icon">
+                                <span class="icon icon-power"></span>
+                            </div>
+                            <h3 class="services__title">Stress Management</h3>
+                        </div>
+                        <p class="services__text">
+                            The symptoms of stress are very different and depend on both the circumstances and the characteristics of the care itself. Serious traumatic events can cause acute stress disorder.
+                        </p>
+                        <a href="/#/servicespage" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__content">
+                        <div class="services__block">
+                            <div class="services__icon"><span class="icon icon-sad"></span></div>
+                            <h3 class="services__title">
+                                Depression
+                            </h3>
+                        </div>
+                        <p class="services__text">
+                            Depression is a common mental health problem. Their prevalence in adults is about 12%, in children and youth - about 4-8%.
+                        </p>
+                        <a href="/#/servicespage" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__content">
+                        <div class="services__block">
+                            <div class="services__icon"><span class="icon icon-heart-broken"></span></div>
+                            <h3 class="services__title">
+                                Relationships
+                            </h3>
+                        </div>
+                        <p class="services__text">
+                            There are a number of problems that hinder the normal development of the family: low income; low material level, lack of free time, poor living conditions, unsettled life, difficulties related to the birth and upbringing of children, etc.
+                        </p>
+                        <a href="/#/servicespage" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__content">
+                        <div class="services__block">
+                            <div class="services__icon"><span class="icon icon-bullhorn"></span></div>
+                            <h3 class="services__title">
+                                Anxiety
+                            </h3>
+                        </div>
+                        <p class="services__text">
+                            Anxiety is a vague, long-lasting and vague fear about future events. It occurs in situations where there is not (and may not be) a real danger to man, but he is waiting for it, and does not yet know how to deal with it. According to some researchers, anxiety is a combination of several emotions - fear, sadness, shame and guilt.
+                        </p>
+                        <a href="/#/servicespage" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__content">
+                        <div class="services__block">
+                            <div class="services__icon"><span class="icon icon-bubbles4"></span></div>
+                            <h3 class="services__title">
+                                Executive Coaching
+                            </h3>
+                        </div>
+                        <p class="services__text">
+                            The coach helps the leader understand their current competencies, see how they’re perceived by others, and focus on identifying and clarifying current goals as well as the appropriate action steps to reach those goals.
+                        </p>
+                        <a href="/#/servicespage" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__content">
+                        <div class="services__block">
+                            <div class="services__icon"><span class="icon icon-users"></span></div>
+                            <h3 class="services__title">
+                                Support Group
+                            </h3>
+                        </div>
+                        <p class="services__text">
+                            Psychotherapeutic groups are small temporary associations of people led by a psychologist or social worker, who have a common network of interpersonal research, personal growth and self-disclosure. These groups, in which there is a holistic deep development of personality and self-actualization of a healthy person, accelerates the process of mental maturation.
+                        </p>
+                        <a href="/#/servicespage" class="button">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="container contacts__container">
+                <div class="contacts__item">
+                    <span class="contacts__icon icon-location"></span>
+                    <h3 class="contacts__title">VISIT ME</h3>
+                    <p><a href="/#/contactspage" class="contacts__text">200 Broadway Av<br>Manhattan 5024<br>New York</a></p>
+                </div>
+                <div class="contacts__item">
+                    <span class="contacts__icon icon-clock"></span>
+                    <h3 class="contacts__title">OPEN HOURS</h3>
+                    <p class="contacts__text">Mon-Fri: 10:00 – 16:00<br>Sat: 10:00 – 14:00<br>Sun: Closed</p>
+                </div>
+                <div class="contacts__item">
+                    <span class="contacts__icon icon-bubble2"></span>
+                    <h3 class="contacts__title">LET’S TALK</h3>
+                    <p><a class="contacts__text" href="tel:879-332-9375">879-332-9375</a><br>
+                    <a class="contacts__text" href="tel:879-332-9376">879-332-9376</a><br>
+                    <a class="contacts__text" href="mailto:psycho@example.com">psycho@example.com</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -140,6 +258,7 @@ export default {
 </script>
 <style lang="scss">
 @import '../css/variables.scss';
+@import '../assets/icomoon/style.css';
 .home {
    width: 100%; 
    min-height: calc(100vh - 100px); 
@@ -176,6 +295,9 @@ export default {
     height: 150px;
     width: 150px;
     }
+}
+.slick-dots {
+    bottom: 10px;
 }
 .about {
     width: 100%;
@@ -275,6 +397,134 @@ export default {
         padding-bottom: 20px;
         line-height: 24px;
         text-align: center;
+    }
+}
+.services {
+    background-color: $main_color;
+    padding: 50px 0;
+    @media (max-width: $xs) {
+        margin-top: 200px;
+    }
+    &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    gap: 50px;
+    @media (max-width: $sm) {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__item {
+        position: relative;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__block{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__icon {
+        width: 50px;
+        height: 50px;
+        border-width: 0px;
+        border-radius: 50%;
+        background-color: $color2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        padding-left: 20px;
+        color: $color3;
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        font-style: normal;
+        color: $color3;
+        padding: 20px 0;
+    }
+}
+.icon {
+    font-size: 20px;
+    line-height: 55px;
+    color: $color3;    
+}
+.button {
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: absolute;
+    bottom: -20px;
+    white-space: nowrap;
+    border: 1px solid $main_color;
+    z-index: 1;
+    text-decoration: none;
+    background: $color2;
+    color: $main_color;
+}
+.button:hover {
+    color: $color2;
+    background-color: $color3;
+    transition: color .3s ease-in-out, background-color.3s ease-in-out;
+}
+.contacts {
+    padding: 50px 0;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+        gap: 50px;
+        @media (max-width: $xs) {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__icon {
+        color:$main_color;
+        font-size: 60px;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+        font-style: normal;
+        color: $color3;
+        letter-spacing: 1px;
+        padding: 20px 0;
+        line-height: 40px;
+        text-align: center;
+    }
+    &__text{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        font-style: normal;
+        color: $color6;
+        text-decoration: none;
     }
 }
 </style>
