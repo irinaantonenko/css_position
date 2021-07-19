@@ -9,6 +9,19 @@ import AboutmePage from './components/AboutmePage'
 import ServicesPage from './components/ServicesPage'
 import PricesPage from './components/PricesPage'
 import ContactsPage from './components/ContactsPage'
+import './css/leaflet.css';
+import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
+
+Vue.component('l-map', LMap);
+Vue.component('l-tile-layer', LTileLayer);
+Vue.component('l-marker', LMarker);
+import { Icon } from 'leaflet';
+
+delete Icon.Default.prototype._getIconUrl;
+Icon.Default.mergeOptions({
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
 
 Vue.component('home-page', HomePage)
 Vue.component('aboutme-page', AboutmePage)
@@ -27,6 +40,7 @@ const router = new VueRouter({
   ],
   linkActiveClass: 'is-active',
 })
+
 
 Vue.config.productionTip = false
 

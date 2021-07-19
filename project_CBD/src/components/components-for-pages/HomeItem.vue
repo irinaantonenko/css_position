@@ -2,8 +2,8 @@
     <div class="home__item">
         <img class="home__image" :src="require('./../../assets/images/' + main.image)" :alt="main.title">
         <div class="home__content">
-            <h1 class="h1 home__title">{{main.title}}</h1>
-            <h2 class="h2 home__subtitle">{{main.subtitle}}</h2>
+            <h1 class="home__title">{{main.title}}</h1>
+            <h2 class="home__subtitle">{{main.subtitle}}</h2>
         </div>
     </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 .home {
     &__item{ 
         width: 100%;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 6.25em);
     }
     &__image {
         width: 100%;
@@ -31,10 +31,6 @@ export default {
             object-fit: cover;
             object-position: right;
         }
-        @media (max-width:$xs) {
-            object-fit: cover;
-            object-position: right;
-        }
     }
     &__content{
         position: absolute;
@@ -42,13 +38,26 @@ export default {
         top: 40%;
         left: 20%;
         color: $color4;
-        font-size: 36px;
+        @media (max-width:$sm) {
+           top: 50%;
+           left: 40%;
+        }
+        @media (max-width:$xs) {
+           left: 30%;
+        }
+        @media (max-width:$xxs) {
+           top: 40%;
+           left: 15%;
+        }
+    }
+    &__title {
+        font-size: 3em;
         letter-spacing: 5px;
-        @media (min-width:$xl) {
-            font-size: 86px;
+        @media (min-width:$xxl) {
+            font-size: 5em;
         }
         @media (min-width:$lg) {
-            font-size: 56px;
+            font-size: 3em;
         }
         @media (max-width:$sm) {
            top: 50%;
@@ -68,7 +77,7 @@ export default {
     }
     &__subtitle {
         color: $color2;
-        font-size: 34px;
+        font-size: 2em;
         letter-spacing: 5px;
         @media (min-width:$xl) {
             font-size: 84px;

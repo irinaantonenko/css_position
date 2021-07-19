@@ -18,6 +18,7 @@ export default {
         border: 1px solid #e8e8e8;
         overflow: hidden;
         display: flex;
+        cursor: pointer;
         @media (max-width:$sm) {
             width: 10%;
         }

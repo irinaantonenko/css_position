@@ -130,32 +130,14 @@
                 </div>
             </div>
         </div>
-        <div class="contacts">
-            <div class="container contacts__container">
-                <div class="contacts__item">
-                    <span class="contacts__icon icon-location"></span>
-                    <h3 class="contacts__title">VISIT ME</h3>
-                    <p><a href="/#/contactspage" class="contacts__text">200 Broadway Av<br>Manhattan 5024<br>New York</a></p>
-                </div>
-                <div class="contacts__item">
-                    <span class="contacts__icon icon-clock"></span>
-                    <h3 class="contacts__title">OPEN HOURS</h3>
-                    <p class="contacts__text">Mon-Fri: 10:00 – 16:00<br>Sat: 10:00 – 14:00<br>Sun: Closed</p>
-                </div>
-                <div class="contacts__item">
-                    <span class="contacts__icon icon-bubble2"></span>
-                    <h3 class="contacts__title">LET’S TALK</h3>
-                    <p><a class="contacts__text" href="tel:879-332-9375">879-332-9375</a><br>
-                    <a class="contacts__text" href="tel:879-332-9376">879-332-9376</a><br>
-                    <a class="contacts__text" href="mailto:psycho@example.com">psycho@example.com</a></p>
-                </div>
-            </div>
-        </div>
+        <contacts-item/>
+        
     </section>
 </template>
 <script>
 import HomeItem from './components-for-pages/HomeItem.vue'
 import CertificatesItem from './components-for-pages/CertificatesItem.vue'
+import ContactsItem from './components-for-pages/ContactsItem.vue'
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
@@ -205,6 +187,7 @@ export default {
                     image: 'certificate3.jpg'
                 },
             ],
+
             settings: {
                 lazyLoad: "ondemand",
                 fade: true,
@@ -221,11 +204,10 @@ export default {
                 slidesToShow: 5,
                 slidesToScroll: 1,
                 autoplay: true,
-                speed: 3000,
+                speed: 2500,
                 autoplaySpeed: 2000,
                 vertical: false,
                 pauseOnDotsHover: true,
-                pauseOnFocus: true,
                 pauseOnHover: true,
             },
         }
@@ -252,7 +234,8 @@ export default {
     components: {
         HomeItem,
         VueSlickCarousel,
-        CertificatesItem
+        CertificatesItem,
+        ContactsItem
     },   
 }
 </script>
@@ -261,14 +244,14 @@ export default {
 @import '../assets/icomoon/style.css';
 .home {
    width: 100%; 
-   min-height: calc(100vh - 100px); 
+   min-height: calc(100vh - 6.25em); 
    height: 100%;
    @media (min-width:$lg) {
-       min-height: calc(100vh - 200px);
+       min-height: calc(100vh - 12.5em);
    }
 }
 .slick-slider[data-v-3d1a4f76]{
-   height: calc(100vh - 100px);
+   height: calc(100vh - 6.25em);
 }
 .slick-list[data-v-3d1a4f76], .slick-track[data-v-e4caeaf8]:after, .slick-track[data-v-e4caeaf8]:before {
     max-width: 100vw;
@@ -463,68 +446,5 @@ export default {
     font-size: 20px;
     line-height: 55px;
     color: $color3;    
-}
-.button {
-    font-size: 12px;
-    line-height: 36px;
-    font-weight: bold;
-    font-style: normal;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-    position: absolute;
-    bottom: -20px;
-    white-space: nowrap;
-    border: 1px solid $main_color;
-    z-index: 1;
-    text-decoration: none;
-    background: $color2;
-    color: $main_color;
-}
-.button:hover {
-    color: $color2;
-    background-color: $color3;
-    transition: color .3s ease-in-out, background-color.3s ease-in-out;
-}
-.contacts {
-    padding: 50px 0;
-    &__container{
-        display: grid;
-        grid-template-columns: repeat(3, 0.5fr);
-        gap: 50px;
-        @media (max-width: $xs) {
-        grid-template-columns: repeat(1, 1fr);
-        }
-    }
-    &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    &__icon {
-        color:$main_color;
-        font-size: 60px;
-    }
-    &__title {
-        font-size: 22px;
-        font-weight: bold;
-        font-style: normal;
-        color: $color3;
-        letter-spacing: 1px;
-        padding: 20px 0;
-        line-height: 40px;
-        text-align: center;
-    }
-    &__text{
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 24px;
-        font-style: normal;
-        color: $color6;
-        text-decoration: none;
-    }
 }
 </style>

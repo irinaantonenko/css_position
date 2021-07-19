@@ -72,9 +72,9 @@ export default {
     left:0;         
     top:0;            
     z-index:200;
-    min-height:100px;
+    min-height: 6.25em;
     @media (min-width: $lg){
-        min-height: 200px;
+        min-height: 12.5em;
     }
     &__container{
         display: flex;
@@ -157,7 +157,7 @@ export default {
         transform: translateY(10%);
     }
     @media (max-width: $xxs) {
-        transform: translateY(14%);
+        transform: translateY(16%);
     }
 }
 @media (max-width: $sm) {
@@ -169,10 +169,10 @@ export default {
         overflow: auto;
         position: absolute;
         background-color: $main_color;
-        width: 100vw;
+        width: 100%;
         top: 50px;
         left: 0;
-        z-index: 1333;
+        z-index: 999;
         transform: translateY(-200%);
         transition: transform 0.3s ease;
         &__list{
