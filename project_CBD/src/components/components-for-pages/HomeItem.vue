@@ -38,6 +38,7 @@ export default {
         top: 40%;
         left: 20%;
         color: $color4;
+        font-family: $font_family1;
         @media (max-width:$sm) {
            top: 50%;
            left: 40%;

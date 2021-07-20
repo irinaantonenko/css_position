@@ -66,8 +66,10 @@ export default {
         font-style: normal;
         color: $color6;
         text-decoration: none;
-        &:hover {
-        color:$main_color;
+        @media (hover){
+            &:hover {
+            color:$main_color;
+            }
         }
     }
 }

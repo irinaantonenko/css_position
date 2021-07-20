@@ -45,10 +45,13 @@ export default {
         cursor: pointer;
         color: $color2;
         text-decoration: none;
-    }
-    &__icon:hover {
+        @media (hover) {
+        &:hover {
         color:$main_color;
+        }
     }
+    }
+    
 }
 </style>
 

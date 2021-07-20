@@ -82,6 +82,9 @@ export default {
         align-items: center;
     }
     &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: $color2;
     font-family: $font_family1;
     font-size: 14px;
@@ -111,10 +114,11 @@ export default {
     cursor: pointer;
     padding: 10px 0;
     text-decoration: none;
-    :hover {
+    @media (hover) {
+        :hover {
         color: $color2;
-        text-decoration: none;
         }
+    }
     }
 }
 .link {
@@ -123,10 +127,6 @@ export default {
     text-decoration: none;
     padding: 10px;
     color: $color3;
-    &__item:hover{
-        color: $color2;
-        text-decoration: none;
-    }
 }
 .burger {
     display: none;
@@ -144,9 +144,6 @@ export default {
     height: 3px;
     background: $color3;    
     }
-}
-.burger:hover{
-    color:$color2;
 }
 .burger:checked ~ .header__nav {
     transform: translateY(50%);
@@ -172,7 +169,7 @@ export default {
         width: 100%;
         top: 50px;
         left: 0;
-        z-index: 999;
+        z-index: 2000;
         transform: translateY(-200%);
         transition: transform 0.3s ease;
         &__list{
@@ -190,7 +187,6 @@ export default {
     .link {
         padding: 5px;
         color: $color3;
-
     }
 }
 </style>

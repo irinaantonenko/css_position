@@ -41,7 +41,8 @@ export default {
 };
 </script>
 <style lang="scss">
-    .leaflet-pane{
+    .leaflet-pane, .leaflet-top, .leaflet-bottom {
         z-index: 5;
     }
+
 </style>

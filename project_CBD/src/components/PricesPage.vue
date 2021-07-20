@@ -13,7 +13,6 @@
 </template>
 <script>
 import PricesItem from './components-for-pages/PricesItem.vue'
-
 export default {
     data: () => {
         return {
@@ -52,13 +51,18 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    
     width: 100%; 
     min-height: calc(100vh - 12.5em); 
     height: 100%;
+    @media (min-width: $lg) { 
+        min-height: calc(100vh - 18.75em); 
+        }
+    @media (max-width: $sm) {
+        padding: 50px 0;
+        }
     &__container{
         display: grid;
-        grid-template-columns: repeat(4, 0.5fr);
+        grid-template-columns: repeat(4, 0.7fr);
         gap: 50px;
         width: 100%;
         padding: 20px 0;

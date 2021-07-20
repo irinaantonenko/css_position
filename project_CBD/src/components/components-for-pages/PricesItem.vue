@@ -1,32 +1,53 @@
 <template>
-    <div class="prices__item">
-        <div class="prices__block">
-            <div class="prices__header">
-                <h3 class="prices__name">{{pricing.name}}</h3>
-                <p class="prices__value">{{'$' + pricing.value}}</p>
-                <p class="prices__time">{{pricing.time}}</p>
-            </div>
-            <div class="prices__content">
-                <span class="prices__text">Depression Therapy</span> 
-                <span class="prices__text">Stress Management</span> 
-                <span class="prices__text">Anxiety Treatment</span> 
-                <span class="prices__text">Individual Coaching</span> 
-                <span class="prices__text">Post-Divorce Recovery</span> 
-            </div>
-            <div class="prices__button">
-                <button class="button button--price">Book now</button>
-            </div>
+    <div>
+        <div class="prices__item">
+            <div class="prices__block">
+                <div class="prices__header">
+                    <h3 class="prices__name">{{pricing.name}}</h3>
+                    <p class="prices__value">{{'$' + pricing.value}}</p>
+                    <p class="prices__time">{{pricing.time}}</p>
+                </div>
+                <div class="prices__content">
+                    <span class="prices__text">Depression Therapy</span> 
+                    <span class="prices__text">Stress Management</span> 
+                    <span class="prices__text">Anxiety Treatment</span> 
+                    <span class="prices__text">Individual Coaching</span> 
+                    <span class="prices__text">Post-Divorce Recovery</span> 
+                </div>
+                <div class="prices__button">
+                    <button @click="showModal" class="button button--price">Book now</button>
+                </div>
+            </div>        
         </div>
-    </div>
+        <ModalItem
+            v-show="isModalVisible"
+            @close="closeModal"/>
+    </div>    
 </template>
 <script>
+import ModalItem from './ModalItem';
 export default {   
     props: ['pricing'],
+    components: {
+      ModalItem,
+    },
+    data () {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    },
 }
 </script>
 <style lang="scss">
 @import '../../css/variables.scss';
-@import '../../css/style.css';
 .prices {
     &__item {
         display: flex;
@@ -41,13 +62,15 @@ export default {
         transform: scale(1,1);
         transition-timing-function: ease-out;
         transition-duration: 550ms;
-        &:hover {
+        @media (min-width:$md) {
+            &:hover {
             transform: scale(1.2,1.2);
             transition-timing-function: ease-out;
             transition-duration: 550ms;
+            }
         }
     }
-    &__block{
+    &__block {
         display: inherit;
         flex-direction: column;
         align-items: center;
@@ -81,7 +104,7 @@ export default {
         color:$color5;
     }
     &__button {
-        padding: 30px;
+        padding: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
