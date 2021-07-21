@@ -23,7 +23,7 @@
             v-show="isModalVisible"
             @close="closeModal"/>
     </div>    
-</template>
+</template> 
 <script>
 import ModalItem from './ModalItem';
 export default {   
@@ -54,7 +54,6 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        position: relative;
         height: 100%;
         padding: 0;
         border: 1px solid $main_color;
@@ -77,6 +76,7 @@ export default {
         justify-content: space-around;
         width: 100%;
         height: 100%;
+        position: relative;
     }
     &__header {
         display: flex;
