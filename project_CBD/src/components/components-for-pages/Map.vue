@@ -3,7 +3,7 @@
     <l-map
       :zoom="zoom"
       :center="center"
-      style="height: 500px; width: 100%"
+      style="height: 50vh; width: 100%"
     >
       <l-tile-layer
         :url="url"
@@ -41,8 +41,14 @@ export default {
 };
 </script>
 <style lang="scss">
-    .leaflet-pane, .leaflet-top, .leaflet-bottom {
-        z-index: 5;
-    }
+@import '../../css/variables.scss';
+.leaflet-pane, .leaflet-top, .leaflet-bottom {
+  z-index: 5;
+}
+l-map {
+  @media (max-width: $xl) {
+    height: 60vh;
+  }
+}
 
 </style>

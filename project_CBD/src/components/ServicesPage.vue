@@ -2,12 +2,12 @@
     <section class="servicespage">
         <div class="container">
             <h2 class="servicespage__title">Services &amp; Therapy</h2>
-            <h3 class="servicespage__subtitle">Jane Roberts is heighly verified and certificated practicing psychologist</h3>  
+            <h3 class="servicespage__subtitle">Jane Roberts is heighly verified and certificated practicing psychologist</h3> 
             <div class="servicespage__container">
                 <ServicesItem v-for="(therapy, j) in therapies"
                 :key="j"
                 :therapy = "therapy"/>
-            </div>
+            </div>            
         </div>
     </section>
 </template>
@@ -44,7 +44,7 @@ export default {
                 },
                 {
                     title: 'Individual Coaching',
-                    subtitle: 'Individual, Сoaching',
+                    subtitle: 'Individual, Coaching',
                     image: 'therapy6.jpg'
                 },
             ],
@@ -61,13 +61,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; 
-    height: 100%;
     padding: 50px 0;
     &__container{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 0.5fr);
         gap: 50px;
         width: 100%;
         padding: 20px 0;

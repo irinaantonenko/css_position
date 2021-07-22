@@ -68,7 +68,7 @@
             max-width: 400px;
         } 
         @media (max-width:$xxs) {
-            max-width: 280px;
+            max-width: 250px;
         }          
     }
     &__header{
@@ -131,7 +131,7 @@
         font-family: $font_family1;
     }
     &__icon {   
-        margin: 10px 0;     
+        margin: 5px 0;     
         font-size: 22px;
         cursor: pointer;
         text-decoration: none;
