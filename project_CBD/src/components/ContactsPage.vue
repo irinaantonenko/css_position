@@ -22,10 +22,10 @@ export default {
 <style lang="scss">
 @import '../css/variables.scss';
 .contactspage {
-    padding-top: 50px 0;
+    padding: 50px 0;
     width: 100%; 
-    @media (min-width: $lg) { 
-        min-height: calc(100vh - 18.75em); 
+    @media (min-width: $xl) { 
+        min-height: calc(100vh - 26em); 
     }
     &__title {
         font-size: 36px;
