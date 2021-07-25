@@ -1,19 +1,29 @@
 <template>
-    <div @click="showModal" class="servicespage__item">
-        <div class="servicespage__wrap">
+    <div  class="servicespage__item">
+        <div @click="showModal" class="servicespage__wrap">
             <div class="servicespage__hover"><p>Read more</p></div>
             <img class="servicespage__image" :src="require('./../../assets/images/' + therapy.image)" :alt="therapy.title">
         </div>
-        <h4 class="servicespage__title servicespage__title--small">{{therapy.title}}</h4>
-        <h5 class="servicespage__subtitle servicespage__subtitle--small">{{therapy.subtitle}}</h5>
-        <ModalItem2
+        <h4 @click="showModal" class="servicespage__title servicespage__title--small">{{therapy.title}}</h4>
+        <h5 @click="showModal" class="servicespage__subtitle servicespage__subtitle--small">{{therapy.subtitle}}</h5>
+        <ModalItem2 
             v-show="isModalVisible"
-            @close="closeModal"/>
+            @close="closeModal">
+            <div class="servicespage__modal">
+                <div class="servicespage__block">
+                    <img class="servicespage__image" :src="require('./../../assets/images/' + therapy.image)" :alt="therapy.title">
+                </div>
+                <div class="servicepage__content">
+                    <h4 @click="showModal" class="servicespage__title servicespage__title--small">{{therapy.title}}</h4>
+                    <h5 @click="showModal" class="servicespage__subtitle servicespage__subtitle--small">{{therapy.subtitle}}</h5>
+                </div>
+            </div>
+            </ModalItem2>
     </div>    
 </template>
 <script>
 import ModalItem2 from './ModalItem2';
-export default {   
+export default {    
     props: ['therapy'],
     components: {
       ModalItem2,
@@ -21,7 +31,7 @@ export default {
     data () {
       return {
         isModalVisible: false,
-      };
+      }
     },
     methods: {
       showModal() {
@@ -104,6 +114,16 @@ export default {
             opacity: 0.8;
             }
         }
+    }
+    &__modal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__block {
+        overflow: hidden;
+        position: relative;
+        width: 50%;
     }
 }
 </style>

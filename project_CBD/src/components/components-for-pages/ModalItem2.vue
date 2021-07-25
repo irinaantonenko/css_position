@@ -1,21 +1,11 @@
 <template>
     <div class="modal" @click="close">
-        <div class="modal__content" @click.stop>
-            <section class="modal__body">
-                <slot name="header">
-                    <button type="button" class="modal__close" @click="close"><span class="icon-cross"></span>
-                    </button>
-                </slot>
-                <slot name="body">
-                    <div class="modal__item">
-                        <img src="" alt="">
-                    </div>
-                    <div class="modal__item">
-                        <img src="" alt="">
-                    </div>
-                </slot>
-            </section>
-        </div>
+        <slot class="modal__content" @click.stop>
+           
+            <button type="button" class="modal2__close" @click="close"><span class="icon-cross"></span>
+         </button>
+              
+        </slot>
     </div>
 </template>
 <script>
@@ -64,37 +54,4 @@
             max-width: 250px;
         }          
     }
-    &__header{
-        padding: 15px;
-        display: flex;
-        background-color: $color5;
-        color: $color2;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-    }
-    &__close {
-        border: none;
-        padding: 20px;
-        cursor: pointer;
-        font-weight: bold;
-        color: $color2;
-        background: transparent;
-        position:absolute;
-        top: 0.5rem;
-        right: 0.5rem;
-        @media (max-width:$xs) {
-            top: 0;
-            right: 0; 
-            padding: 10px;
-        }
-    }
-    &__body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 0;
-        background-color: $main_color;
-    }
 }
-</style>
