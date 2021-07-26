@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/https://irinaantonenko.github.io/my_project/project_CBD/dist/index.html',
+    assetsPublicPath: './',
     proxyTable: {},
     useEslint: false,
 
@@ -43,7 +43,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/https://irinaantonenko.github.io/my_project/project_CBD/dist/index.html',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
