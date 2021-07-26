@@ -125,7 +125,7 @@
                         <p class="services__text">
                             {{'Psychotherapeutic groups are small temporary associations of people led by a psychologist or social worker, who have a common network of interpersonal research, personal growth and self-disclosure. These groups, in which there is a holistic deep development of personality and self-actualization of a healthy person, accelerates the process of mental maturation.' | truncate(200, '...')}}
                         </p>
-                        <a href="/#/servicespage" class="button">Read more</a>
+                        <a href="/dist/index.html/#/servicespage" class="button">Read more</a>
                     </div>
                 </div>
             </div>
