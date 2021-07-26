@@ -44,6 +44,10 @@ export default {
     padding: 50px 0;
     &__container {
         display: flex;
+        flex-direction: row;
+        @media (max-width:$sm) {
+            flex-direction: column;
+        }
     }
     &__item {
         display: flex;
@@ -51,6 +55,9 @@ export default {
         align-items: center;
         justify-content: center;
         width: 50%;
+        @media (max-width:$sm) {
+            width: 100%;
+        }
         &--grid {
             display: grid;
             grid-template-columns: repeat(1, 1fr);

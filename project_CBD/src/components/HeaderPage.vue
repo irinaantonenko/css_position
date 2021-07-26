@@ -71,7 +71,7 @@ export default {
     position: sticky; 
     left:0;         
     top:0;            
-    z-index:200;
+    z-index:700;
     min-height: 6.25em;
     @media (min-width: $lg){
         min-height: 12.5em;
