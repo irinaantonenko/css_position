@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/https://irinaantonenko.github.io/my_project/project_CBD/dist/index.html',
     proxyTable: {},
     useEslint: false,
 
