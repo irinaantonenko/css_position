@@ -42,8 +42,8 @@ export default {
 </script>
 <style lang="scss">
 @import '../../css/variables.scss';
-.leaflet-pane, .leaflet-top, .leaflet-bottom {
-  z-index: 5;
+.leaflet-control-attribution .leaflet-control, .leaflet-pane, .leaflet-top, .leaflet-bottom {
+  z-index: 500;
 }
 l-map {
   @media (max-width: $xl) {

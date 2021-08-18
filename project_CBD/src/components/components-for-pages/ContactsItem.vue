@@ -4,7 +4,7 @@
                 <div class="contacts__item">
                     <span class="contacts__icon icon-location"></span>
                     <h3 class="contacts__title">VISIT ME</h3>
-                    <p><a href="/#/contactspage" class="contacts__text">200 Broadway Av<br>Manhattan 5024<br>New York</a></p>
+                    <p><a href="/dist/index.html#/contactspage" class="contacts__text">200 Broadway Av<br>Manhattan 5024<br>New York</a></p>
                 </div>
                 <div class="contacts__item">
                     <span class="contacts__icon icon-clock"></span>

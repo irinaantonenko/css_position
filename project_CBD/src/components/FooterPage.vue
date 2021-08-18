@@ -7,7 +7,8 @@
                 <a class="footer__icon icon-whatsapp" href="https://api.whatsapp.com/send/?phone=79785060117&text&app_absent=0" target="_blank"></a>
             </div>
             <div class="footer__policy">
-                Privacy Policy &copy; 2021 / All Rights Reserved
+                <span class="footer__text">Privacy Policy &copy; 2021 /</span> 
+                <span class="footer__text">All Rights Reserved</span>
             </div>
         </div>
     </footer>
@@ -50,9 +51,20 @@ export default {
         color:$main_color;
         }
     }
+    &__policy {
+        @media (max-width: $xs) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+    &__text{
+       @media (max-width: $xs) {
+        text-align: center;
+        }
+    }
     }
     
 }
-</style>
-
 </style>
