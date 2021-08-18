@@ -55,7 +55,7 @@
                         <p class="services__text">
                             {{'The symptoms of stress are very different and depend on both the circumstances and the characteristics of the care itself. Serious traumatic events can cause acute stress disorder.' | truncate(200, '...')}}
                         </p>
-                        <a href="/my_project/project_CBD/index.html#/servicespage" class="button">Read more</a>
+                        <a href="/my_project/project_CBD/dist/index.html#/servicespage" class="button">Read more</a>
                     </div>
                 </div>
                 <div class="services__item">
@@ -69,7 +69,7 @@
                         <p class="services__text">
                             {{'Depression is a common mental health problem. Their prevalence in adults is about 12%, in children and youth - about 4-8%.' | truncate(200, '...')}}
                         </p>
-                        <a href="/my_project/project_CBD/index.html#/servicespage" class="button">Read more</a>
+                        <a href="/my_project/project_CBD/dist/index.html#/servicespage" class="button">Read more</a>
                     </div>
                 </div>
                 <div class="services__item">
@@ -83,7 +83,7 @@
                         <p class="services__text">
                             {{'There are a number of problems that hinder the normal development of the family: low income; low material level, lack of free time, poor living conditions, unsettled life, difficulties related to the birth and upbringing of children, etc.' | truncate(200, '...')}}
                         </p>
-                        <a href="/my_project/project_CBD/index.html#/servicespage" class="button">Read more</a>
+                        <a href="/my_project/project_CBD/dist/index.html#/servicespage" class="button">Read more</a>
                     </div>
                 </div>
                 <div class="services__item">
@@ -97,7 +97,7 @@
                         <p class="services__text">
                             {{'Anxiety is a vague, long-lasting and vague fear about future events. It occurs in situations where there is not (and may not be) a real danger to man, but he is waiting for it, and does not yet know how to deal with it. According to some researchers, anxiety is a combination of several emotions - fear, sadness, shame and guilt.' | truncate(200, '...')}}
                         </p>
-                        <a href="/my_project/project_CBD/index.html#/servicespage" class="button">Read more</a>
+                        <a href="/my_project/project_CBD/dist/index.html#/servicespage" class="button">Read more</a>
                     </div>
                 </div>
                 <div class="services__item">
@@ -111,7 +111,7 @@
                         <p class="services__text">
                             {{'The coach helps the leader understand their current competencies, see how they’re perceived by others, and focus on identifying and clarifying current goals as well as the appropriate action steps to reach those goals.' | truncate(200, '...')}}
                         </p>
-                        <a href="/my_project/project_CBD/index.html#/servicespage" class="button">Read more</a>
+                        <a href="/my_project/project_CBD/dist/index.html#/servicespage" class="button">Read more</a>
                     </div>
                 </div>
                 <div class="services__item">
@@ -125,7 +125,7 @@
                         <p class="services__text">
                             {{'Psychotherapeutic groups are small temporary associations of people led by a psychologist or social worker, who have a common network of interpersonal research, personal growth and self-disclosure. These groups, in which there is a holistic deep development of personality and self-actualization of a healthy person, accelerates the process of mental maturation.' | truncate(200, '...')}}
                         </p>
-                        <a href="/my_project/project_CBD/index.html#/servicespage" class="button">Read more</a>
+                        <a href="/my_project/project_CBD/dist/index.html#/servicespage" class="button">Read more</a>
                     </div>
                 </div>
             </div>

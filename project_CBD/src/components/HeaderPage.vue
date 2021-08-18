@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <div class="container header__container">
-            <div class="header__item"><a href="/dist/index.html#/homepage" target="blank"><img :src="require('./../assets/images/logo.png')"></a>
+            <div class="header__item"><a href="/my_project/project_CBD/dist/index.html#/homepage" target="blank"><img :src="require('./../assets/images/logo.png')"></a>
             </div>
             <div class="header__item">
                 <input id="burger" type="checkbox" class="burger">
