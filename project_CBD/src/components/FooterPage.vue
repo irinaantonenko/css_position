@@ -50,6 +50,7 @@ export default {
         &:hover {
         color:$main_color;
         }
+        }
     }
     &__policy {
         @media (max-width: $xs) {
@@ -63,8 +64,6 @@ export default {
        @media (max-width: $xs) {
         text-align: center;
         }
-    }
-    }
-    
+    }      
 }
 </style>

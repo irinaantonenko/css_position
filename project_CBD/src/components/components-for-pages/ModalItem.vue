@@ -38,7 +38,7 @@
 <style lang="scss">
 @import '../../css/variables.scss';
 .modal {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
@@ -47,6 +47,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    z-index: 3;
     @media (max-width:$sm) {
             background-color: transparent;
         }    
@@ -149,6 +150,10 @@
                 background-color: $color3;
                 transition: color .3s ease-in-out, background-color.3s ease-in-out;
             }
+        }
+        @media (max-width: $xxs) {
+           font-size: 20px;
+           padding: 10px; 
         }
     }
     &__button{

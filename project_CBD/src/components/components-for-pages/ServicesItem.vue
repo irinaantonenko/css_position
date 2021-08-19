@@ -9,11 +9,11 @@
         <ModalItem2 
             v-show="isModalVisible"
             @close="closeModal">
-            <div class="servicespage__modal">
+            <div class="servicespage__modal" @click.stop>
                 <div class="servicespage__block">
                     <img class="servicespage__image" :src="require('./../../assets/images/' + therapy.image)" :alt="therapy.title">
                 </div>
-                <div class="servicepage__content">
+                <div class="servicespage__content">
                     <h4 @click="showModal" class="servicespage__title servicespage__title--small">{{therapy.title}}</h4>
                     <h5 @click="showModal" class="servicespage__subtitle servicespage__subtitle--small">{{therapy.subtitle}}</h5>
                 </div>
@@ -94,15 +94,24 @@ export default {
         object-fit: cover;
         object-position: center;
     }
+    &__content{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     &__title--small {
         font-size: 18px;
         padding: 5px;
         cursor: pointer;
         @media (hover) {
             &:hover {
-            background-color: $color2;
-            opacity: 0.8;
+                opacity: 0.8;
             }
+        }
+        @media (max-width:$xs) {
+            font-size: 13px;
         }
     }
     &__subtitle--small {
@@ -110,20 +119,26 @@ export default {
         cursor: pointer;
         @media (hover) {
             &:hover {
-            background-color: $color2;
-            opacity: 0.8;
+               opacity: 0.8;
             }
+        }
+        @media (max-width:$xs) {
+            font-size: 12px;
         }
     }
     &__modal {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background-color: $color7;
+        max-width: 90vw;
+        z-index: 5;
     }
     &__block {
         overflow: hidden;
         position: relative;
         width: 50%;
+
     }
 }
 </style>

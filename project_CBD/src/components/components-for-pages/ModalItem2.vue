@@ -1,10 +1,8 @@
 <template>
-    <div class="modal" @click="close">
-        <slot class="modal__content" @click.stop>
-           
+    <div class="modal modal--services" @click="close">
+        <slot class="modal__content" @click.stop>           
             <button type="button" class="modal2__close" @click="close"><span class="icon-cross"></span>
-         </button>
-              
+             </button>              
         </slot>
     </div>
 </template>
@@ -20,8 +18,8 @@
 
 <style lang="scss">
 @import '../../css/variables.scss';
-.modal {
-    position: absolute;
+.modal{    
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
@@ -30,6 +28,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    z-index: 3;
     @media (max-width:$sm) {
             background-color: transparent;
         }    
