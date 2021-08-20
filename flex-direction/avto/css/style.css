@@ -236,6 +236,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    cursor: pointer;
   }
   .header__nav {
     max-height: 100vh;
@@ -367,6 +368,15 @@ body {
   font-weight: 600;
   font-size: 16px;
   margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  .btn2 {
+    padding: 10px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 12px;
+  }
 }
 
 .btn2:hover {
@@ -915,8 +925,26 @@ body {
   overflow-y: scroll;
 }
 
+@media (max-width: 480px) {
+  .shop__list {
+    overflow-y: hidden;
+  }
+}
+
 .shop__item {
   width: calc(30% - 30px);
+}
+
+@media (max-width: 760px) {
+  .shop__item {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop__item {
+    min-width: 170px;
+  }
 }
 
 .shop__section {
@@ -933,6 +961,21 @@ body {
   color: #252A34;
 }
 
+@media (max-width: 760px) {
+  .shop__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .shop__change {
   width: calc(22% - 30px);
   padding: 20px;
@@ -945,6 +988,14 @@ body {
 
 .shop__list {
   max-height: 800px;
+}
+
+@media (max-width: 480px) {
+  .shop__list {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
 }
 
 .accordion, .brand {
